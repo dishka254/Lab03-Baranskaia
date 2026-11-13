@@ -1,16 +1,18 @@
-﻿Console.WriteLine("Бансковский счёт");
+﻿Console.WriteLine();
+Console.WriteLine("Постфикс vs префикс");
 
-double balance = 1000;
-Console.WriteLine($"Начальный баланс: {balance}");
+int lessonNumber = 1;
+Console.WriteLine($"lessonNumber++ выводит: {lessonNumber++}");
+Console.WriteLine($"После этого lessonNumber =  {lessonNumber}");
 
-balance += 500;
-Console.WriteLine($"После пополнения на 500: {balance}");
+int weekNumber = 1;
+Console.WriteLine($"++weekNumber выводит: {++weekNumber}");
+Console.WriteLine($"После этого weekNumber = {weekNumber}");
 
-balance -= 200;
-Console.WriteLine($"После покупки на 200: {balance}");
+Console.WriteLine();
+Console.WriteLine("Практическая ловушка");
 
-balance *= 1.05;
-Console.WriteLine($"После начисления 5% : {balance}");
-
-balance /= 2;
-Console.WriteLine($"После деления на пополам: {balance}");
+int attempts = 0;
+Console.WriteLine($"Попытка №{++attempts}");
+Console.WriteLine($"Попытка №{++attempts}");
+Console.WriteLine($"Всего попыток: {attempts}");
